@@ -1,0 +1,16 @@
+<?php
+class Palindrome
+{
+    public static function isPalindrome($word)
+    {
+        $word = strtolower($word);
+        if(strrev($word) === $word)
+        {
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
+
+echo Palindrome::isPalindrome('Deleveled');
